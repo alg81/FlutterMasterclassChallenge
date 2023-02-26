@@ -1,14 +1,21 @@
 // Funcao que calcula o IMC a partir do peso e altura.
+import 'dart:io';
+
 void IMC(double peso, double altura) {
   double imc;
   imc = (peso / (altura * altura));
-  print('O IMC é: $imc');
+  String imc_doisDigitos = imc.toStringAsFixed(2);
+  print('O IMC é: $imc_doisDigitos');
 }
 
 void main(List<String> arguments) {
-  // Passando o peso e altura diretamente no código
-  double peso = 90;
-  double altura = 1.7;
+  // Recebendo o peso e altura através da linha de comando.
+
+  print("Digite o peso: ");
+  double peso = double.parse(stdin.readLineSync()!);
+
+  print("Digite a altura: ");
+  double altura = double.parse(stdin.readLineSync()!);
 
   IMC(peso, altura);
 }
