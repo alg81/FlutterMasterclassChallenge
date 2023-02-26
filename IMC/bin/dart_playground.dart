@@ -7,7 +7,7 @@ void IMC(double peso, double altura) {
 
 void main(List<String> arguments) {
   // Passando o peso e altura diretamente no código
-  double peso = 88;
+  double peso = 90;
   double altura = 1.7;
 
   IMC(peso, altura);
