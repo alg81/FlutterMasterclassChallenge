@@ -14,10 +14,13 @@ void main(List<String> arguments) {
     const int numItens = 4;
     List<String> listaPos = ["1.1", "1.2", "2.1", "2.2"];
 
+    print('');
+    print('item1.1 x item2.2 = item2.1 x item1.2');
     print(' Digite somente números!');
 
     for (int n = 0; n < numItens; n++) {
-      print( 'Entre com o item ${listaPos[n]} (Apenas aperte ENTER no item a ser calculado): ');
+      print(
+          'Entre com o item ${listaPos[n]} (Apenas aperte ENTER no item a ser calculado): ');
       String? item = stdin.readLineSync();
 
       // Se o item ñ for digitado e for dado ENTER, adiciona o
@@ -36,13 +39,13 @@ void main(List<String> arguments) {
       print(' Só pode haver um item nulo. Digite novamente!');
       lista.clear(); // limpando a lista para tentar novamente.
     }
-    print("lista: $lista");
+    //print("lista: $lista");
   }
   regratres(lista);
 }
 
 void regratres(List<String?> lista) {
-    List<String?> ListaParam = lista;
+  List<String?> ListaParam = lista;
   int ItemPCalc = ListaParam.indexWhere((element) => element!
       .startsWith('0')); // encontra o indice do parametro a ser calculado
 
