@@ -23,8 +23,8 @@ void main(List<String> arguments) {
           'Entre com o item ${listaPos[n]} (Apenas aperte ENTER no item a ser calculado): ');
       String? item = stdin.readLineSync();
 
-      // Se o item ñ for digitado e for dado ENTER, adiciona o
-      // termo "nulo" na lista, caso contrário adiciona o item à lista.
+      // Se o item ñ for digitado e for dado ENTER, adiciona a
+      // string "0" no item da lista, caso contrário adiciona o item digitado.
       if (item?.isEmpty ?? true) {
         lista.add("0");
         numNulos++;
