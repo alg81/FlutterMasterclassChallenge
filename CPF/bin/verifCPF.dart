@@ -1,12 +1,4 @@
-import 'dart:io';
-//import 'package:test/expect.dart';
 import 'package:collection/collection.dart';
-
-void main(List<String> args) {
-  String S_CPF = '03840073443';
-  verifCPF CPF = verifCPF(entradaCPF: S_CPF);
-  CPF.testaCPF(S_CPF) ? print('CPF Validado') : print('CPF INVÁLIDO!');
-}
 
 class verifCPF {
   final String entradaCPF;
