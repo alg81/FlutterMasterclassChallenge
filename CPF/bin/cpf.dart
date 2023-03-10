@@ -64,7 +64,7 @@ class verifCPF {
   
   listaVerif.add(digito2); // adiciona o SEGUNDO digito verificador na listaVerif
   
-  print("Lista     : $lista");
+  print("Lista     : $lint");
   print("ListaVerif: $listaVerif");
   
   Function eq = const ListEquality().equals;
