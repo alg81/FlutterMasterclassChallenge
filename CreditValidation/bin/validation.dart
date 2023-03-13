@@ -25,7 +25,7 @@ class cardValidation {
 
   bool _empty() {
     if (nCard.trim().isEmpty) {
-      print('O número do cartão está vazio.');
+      print('The Credit Card Number must be typed.');
       return true;
     } else {
       return false;
@@ -37,7 +37,7 @@ class cardValidation {
     final bool isPatternCard =
         RegExp(r'([0-9]{4}[\s]?){3}[0-9]{4}').hasMatch(noSignalCardNumber);
     if (isPatternCard == false) {
-      print('O padrão do cartão não confere.');
+      print("Credit Card Number pattern dont match");
       return false;
     } else {
       return true;
@@ -76,7 +76,7 @@ class cardValidation {
     int checkDig = (10 - (sumTerm % 10)) % 10;
 
     (lint[lenCard - 1] == checkDig)
-        ? print('O Cartão é válido.')
-        : print('O Cartão NÃO é válido.');
+        ? print('Valid Credit Card.')
+        : print('Invalid Credit Card.');
   }
 }

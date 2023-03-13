@@ -6,7 +6,7 @@ void main(List<String> args) {
   String? nCard = (stdin.readLineSync()) ?? ''; // Precisava disso?
 
   if (nCard == null) {
-    print('O número do cartão precisa ser digitado.');
+    print('The Credit Card number is empty.');
     exit(0);
   } else {
     cardValidation card = cardValidation(nCard: nCard);
