@@ -9,7 +9,7 @@ class SignIn extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text(
-          'Already have an account. ',
+          'Already have an account? ',
           style: TextStyle(color: Colors.white),
         ),
         GestureDetector(
